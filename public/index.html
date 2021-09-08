@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#a51300" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo212.png" />
+    <title>DC Database</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+      integrity="sha256-O8SsQwDg1R10WnKJNyYgd9J3rlom+YSVcGbEF5RmfFk="
+      crossorigin="anonymous"
+    />
+    <style>
+      #root:not(:empty) + nav.navbar,
+      #root:not(:empty) + * + .loading-spinner {
+        display: none;
+      }
+      nav.navbar img {
+        height: 70px;
+        width: 70px;
+      }
+      .loading-spinner {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+      }
+      .loading-spinner-svg {
+        max-width: 150px;
+        max-height: 150px;
+      }
+      .loading-spinner > .loading-spinner-svg {
+        position: absolute;
+        top: calc(50vh - 75px);
+      }
+      .loading-spinner > p {
+        position: absolute;
+        top: calc(50vh + 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <nav class="navbar is-black">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="/">
+            <img src="%PUBLIC_URL%/favicon.ico" alt="DC Logo" />
+          </a>
+          <div class="navbar-burger burger" data-target="navigation">
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="loading-spinner">
+      <img class="loading-spinner-svg" src="%PUBLIC_URL%/loading.svg" alt="loading" />
+      <p class="has-text-centered px-4" />
+    </div>
+    <script>
+      setTimeout(() => {
+        if (!!document.querySelector('#root:empty')) {
+          document.querySelector('#root:empty + * + .loading-spinner p').innerText =
+            'Please wait... If it takes longer than 10 seconds, please refresh the page.';
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+{
+	"name": "dc",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "/",
+	"proxy": "http://localhost:5000",
+	"dependencies": {
+		"@azure/msal-browser": "^2.13.0",
+		"@mdi/js": "^5.9.55",
+		"@mdi/react": "^1.4.0",
+		"@wojtekmaj/date-utils": "^1.0.3",
+		"classnames": "^2.2.6",
+		"dateformat": "^4.5.1",
+		"history": "^5.0.0",
+		"react": "^17.0.2",
+		"react-calendar": "^3.3.1",
+		"react-dom": "^17.0.2",
+		"react-helmet-async": "^1.0.9",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.5",
+		"@testing-library/user-event": "^12.7.1",
+		"@types/classnames": "^2.2.11",
+		"@types/dateformat": "^3.0.1",
+		"@types/history": "^4.7.8",
+		"@types/jest": "^26.0.20",
+		"@types/node": "^14.14.34",
+		"@types/react": "^17.0.3",
+		"@types/react-calendar": "^3.1.4",
+		"@types/react-dom": "^17.0.2",
+		"@types/react-helmet": "^6.1.0",
+		"@types/react-router-dom": "^5.1.7",
+		"prettier": "^2.2.1",
+		"react-scripts": "^4.0.3",
+		"typescript": "^4.2.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"importSort": {
+		".js, .jsx, .ts, .tsx": {
+			"style": "module",
+			"parser": "typescript"
+		}
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

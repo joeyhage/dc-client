@@ -1,0 +1,230 @@
+.navbar-item.is-active {
+  color: #fff !important;
+  background-color: #a51300 !important;
+}
+.navbar-end > #name {
+  display: none;
+}
+.date {
+  width: 3em;
+}
+section#job-results-table {
+  padding-right: 0;
+  padding-left: 0;
+}
+section#customer-info .panel td,
+section#job-info .panel td {
+  border: 0;
+}
+#customer-job-panel #job-results-table {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.notification {
+  margin: 3em auto;
+  width: 60%;
+}
+section.panel-table {
+  padding-top: 1.5rem;
+  width: 100%;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.button.is-theme {
+  color: #fff !important;
+  background-color: #874840 !important;
+}
+
+.button.is-theme.is-light {
+  color: #8b2618 !important;
+  background-color: #f0dfdc !important;
+}
+
+/* REACT CALENDAR */
+.react-calendar {
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 60%;
+  max-width: 100%;
+  background: white;
+  font: inherit;
+  line-height: 1.125em;
+  border: 0;
+  overflow: hidden;
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+  font: inherit;
+  font-size: 0.8em;
+}
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+.react-calendar--doubleView {
+  width: 700px;
+}
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.react-calendar__navigation {
+  height: 44px;
+  margin-bottom: 10px;
+}
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #fff;
+  cursor: default !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth:disabled {
+  color: #f0f0f0;
+}
+.react-calendar__tile {
+  max-width: 100%;
+  text-align: center;
+  padding: 0.75em 0.5em;
+  background: none;
+}
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+.react-calendar__tile--hasActive {
+  background: #76baff;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+.react-calendar__tile--active {
+  background: #006edc;
+  color: white;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #1087ff;
+}
+.react-calendar__tile.today {
+  color: #006edc;
+}
+.react-calendar__tile--active.today {
+  color: white;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+button.react-calendar__navigation__label {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth:enabled:hover,
+.react-calendar__month-view__days__day--neighboringMonth:enabled:focus {
+  background-color: #fff;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .notification {
+    width: 40% !important;
+  }
+  section#job-results-table {
+    padding-top: 0;
+  }
+  section#job-results-table th:last-of-type {
+    width: 8em;
+  }
+  .navbar-brand > .navbar-item {
+    display: none;
+  }
+  .navbar-end > #name {
+    display: flex;
+  }
+  .react-calendar {
+    width: 40% !important;
+  }
+  .is-offset-30-desktop {
+    margin-left: 30% !important;
+  }
+}
+/* TABLET & DESKTOP */
+@media screen and (min-width: 769px) {
+  section#work-description-tab div.tile.is-child:first-of-type,
+  section#timecard-section div.is-ancestor:first-of-type div.tile.is-child:first-of-type,
+  section#timecard-section div.is-ancestor:first-of-type div.tile.is-child + div.tile.is-child {
+    padding-right: 2rem !important;
+  }
+  section#work-description-tab div.tile.is-child:last-of-type,
+  section#timecard-section div.is-ancestor:first-of-type div.tile.is-child:last-of-type {
+    padding-left: 2rem !important;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  section.section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .notification {
+    width: 100% !important;
+  }
+  #job-panel .is-ancestor,
+  #job-panel .is-parent,
+  #timecard-section .is-ancestor,
+  #timecard-section .is-parent {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #job-panel .tile:first-of-type,
+  #timecard-section .tile:first-of-type {
+    padding-bottom: 1.5rem;
+  }
+  #job-panel .tile:last-of-type,
+  #timecard-section .tile + .tile + .tile {
+    padding-top: 1.5rem;
+  }
+  .react-calendar {
+    width: 100% !important;
+  }
+  hr.dark {
+    background-color: #808080;
+  }
+}
